@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-size: 24px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #C5E4E7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main-box {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 15px;
+    gap: 20px;
+}
+
+.box-left {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.box-right {
+    width: 50%;
+    background-color: #00474B;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+}
+
+
+
+.tip-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tips {
+    width: 90px;
+    height: 50px;
+    background-color: #004649;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    padding-top: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tips:active {
+    width: 90px;
+    height: 50px;
+    background-color: #004649;
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    padding-top: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.active {
+    width: 90px;
+    height: 50px;
+    background-color: #26C2AD;
+    color: rgb(3, 2, 2);
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+    padding-top: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tips-in input {
+    width: 90px;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: #F3F8FB;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+    color: #0A4548;
+}
+
+.input-icons {
+    width: 100%;
+    height: 50px;
+}
+
+.input-icons img {
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 15px;
+
+}
+
+.input-icons input {
+    width: 100%;
+    height: 100%;
+    background-color: #F3F8FB;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: end;
+    font-weight: 700;
+    color: #0A4548;
+    padding: 3px;
+}
+
+.numred {
+    border: 1px solid red !important;
+}
+
+.input-icons input:focus {
+    border: 1px solid #93D3CE;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text-amount {
+    display: block;
+    color: white;
+    text-align: start;
+}
+
+.text-total {
+    display: block;
+    color: white;
+    text-align: start;
+}
+
+p {
+    font-size: 16px;
+
+}
+
+.display-amount {
+    width: 106px;
+    font-size: 28px;
+    color: #25C5AF;
+}
+
+.display-total {
+    width: 106px;
+    font-size: 28px;
+    color: #25C5AF;
+}
+
+.btnactive {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #9FE8DF;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    color: #175F5C;
+}
+
+button {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #0D686D;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    color: rgba(0, 0, 0, 0.178);
+}
+
+
+
+.notf {
+    color: red;
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-top: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .main-box {
+        width: 350px;
+        height: auto;
+        display: block;
+    }
+
+    .box-left {
+        width: 100%;
+    }
+
+    .box-right {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+.colred{
+    color: red;
+    transition: .5s all ease-in;
+    transform: translateX(110px);
+}

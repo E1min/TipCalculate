@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/favicon-32x32.png" type="image/x-icon">
+    <title>Tip Calculate</title>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <div class="logo"><img src="./image/logo.svg" alt=""></div>
+            <div class="main-box">
+                <div class="box-left">
+                    <div class="row">
+                        <span>BILL</span>
+                        <div class="input-icons bill">
+                            <img src="./image/icon-dollar.svg" alt=""> <input type="text" maxlength="5"
+                                placeholder="0.00">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span>Select Tip %</span>
+                        <div class="tip-box">
+                            <div class="tips">5%</div>
+                            <div class="tips">10%</div>
+                            <div class="tips">15%</div>
+                            <div class="tips">25%</div>
+                            <div class="tips">50%</div>
+                            <div class="tips-in"><input type="text" placeholder="Custom" maxlength="3"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span>Number of People</span>
+                        <div class="notf"></div>
+                        <div class="input-icons numpeople">
+                            <img src="./image/icon-person.svg" alt=""><input type="text" maxlength="3" placeholder="1" value="1">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="box-right">
+                    <div class="display">
+                        <div class="text-amount">
+                            <div>Tip Amount</div>
+                            <p>/ person</p>
+                        </div>
+                        <div class="display-amount">$0.00</div>
+                    </div>
+                    <div class="display">
+                        <div class="text-total">
+                            <div>Total</div>
+                            <p>/ person</p>
+                        </div>
+                        <div class="display-total">$0.00</div>
+                    </div>
+                    <div class="button">
+                        <form>
+                            <button type="button">RESET</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
